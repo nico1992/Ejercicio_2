@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="StyleSheet" href="style.css">
+	<title>Hola!</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js">  </script>
+	<script type="text/javascript" >
+		$(document).ready(function() {
+			$("#btn").click(function(event) {
+				$("#texto").load('info.txt');
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btn">CARGAR</button>
+	<div id="demo">
+		<div id="texto"><!-- El texto por ajax va acá --></div>
+	</div>
+
+</body>
+</html>
